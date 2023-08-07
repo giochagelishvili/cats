@@ -192,6 +192,7 @@ main {
 
 .cat-owner {
     width: 15rem;
+    border-radius: 50%;
 }
 
 .quote {
