@@ -1,0 +1,336 @@
+@font-face {
+    font-family: 'Bodoni BT';
+    src: url(fonts/BODONIB.TTF);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1rem = 10px */
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+/* UTILITY CLASSES */
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    position: relative;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    background: linear-gradient(to right, #FF6C00 0%, #282D4F 65%);
+
+    padding: 1rem;
+}
+
+/* Background overlay */
+.overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 100vw;
+    height: 100%;
+
+    background-image: url(img/bg-image.png);
+    background-size: 110%;
+}
+
+.container {
+    position: relative;
+
+    background-color: #F7F5EB;
+
+    min-height: 44rem;
+    padding: 1rem;
+}
+
+.orange-rectangle {
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    z-index: 1;
+
+    width: 10rem;
+    height: 54.1rem;
+    background-color: #FF6C00;
+}
+
+/* -------------- */
+/* HEADER STYLES */
+/* ------------ */
+header {
+    position: relative;
+    z-index: 99;
+
+    background-color: #151718ef;
+    border-radius: 1.5rem;
+
+    padding: 1rem 2rem;
+}
+
+/* Logo and hamburger menu icon container */
+.header-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+#logo {
+    width: 6rem;
+}
+
+/* Hamburger icon */
+#open-menu-icon {
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+/* Nav menu styles */
+.nav-menu {
+    gap: 1rem;
+    padding: 1.5rem;
+    display: none;
+}
+
+/* List styles */
+.nav-menu li {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+/* Nav link styles */
+.nav-link {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ------------ */
+/* MAIN STYLES */
+/* ---------- */
+main {
+    position: relative;
+    z-index: 99;
+
+    margin-top: 2rem;
+}
+
+.main-headline {
+    font-family: 'Bodoni BT';
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0B666A;
+    line-height: 1.8rem;
+}
+
+.main-text-container {
+    position: relative;
+
+    min-height: 20rem;
+    width: calc(100vw - 13rem);
+    margin-top: 7rem;
+
+    background-color: rgb(0, 0, 0, 0.6);
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.text-container {
+    justify-content: space-between;
+    padding: 2rem 1rem;
+
+    height: 30rem;
+    width: calc(100% - 8rem);
+}
+
+.text-container h2 {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+#cat-poster {
+    position: absolute;
+    right: -10rem;
+    top: -6rem;
+    width: 18rem;
+}
+
+.quote-div {
+    align-items: center;
+
+    border: 1px solid #0B666A;
+    border-radius: 5px;
+
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.cat-owner {
+    width: 15rem;
+}
+
+.quote {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #3EB883;
+}
+
+.second-headline {
+    text-align: center;
+    color: #ffffff;
+
+    padding: 1.5rem;
+    margin-top: 2rem;
+
+    background-color: rgb(0, 0, 0, 0.6);
+
+    border-radius: 5px;
+}
+
+.introduction {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gradient {
+    background: linear-gradient(to right, #282D4F, #A0204C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-list {
+    gap: 2rem;
+
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: 1.5rem;
+}
+
+.li-container {
+    gap: 1.5rem;
+}
+
+.menu-list h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    list-style: none;
+}
+
+.menu-list i {
+    font-size: 2.4rem;
+    color: #3EB883;
+}
+
+.before-after-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.ba-img-div {
+    align-items: center;
+    gap: 1rem;
+}
+
+.ba-image {
+    width: 100%;
+    border: 5px solid #A0204C;
+    border-radius: 1.5rem;
+}
+
+.ba-img-div h2 {
+    font-family: 'Bodoni BT';
+    font-size: 1.8rem;
+    color: #fff;
+
+    padding: 0.5rem 2rem;
+    background: linear-gradient(to right, #282D4F 35%, #FF6C00);
+
+    border: 3px solid #282D4F;
+    border-radius: 5px;
+}
+
+.main-poster-container {
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#main-poster {
+    width: 30rem;
+
+    border: 5px solid #0B666A;
+}
+
+.btn-container {
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.free-guide-btn {
+    font-family: 'Bodoni BT';
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+
+    background: linear-gradient(to right, #282D4F, #A0204C);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+
+    border: 3px solid #282D4F;
+    border-radius: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: 1.5rem;
+    background-color: #59387A;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    width: 100%;
+}
+
+footer h2 {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
