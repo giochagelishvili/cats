@@ -45,6 +45,8 @@ body {
     background-size: cover;
 
     padding: 1rem;
+
+    overflow-x: hidden;
 }
 
 /* Background overlay */
@@ -54,11 +56,10 @@ body {
     left: 0;
     z-index: 2;
 
-    width: 100vw;
+    width: 100%;
     height: 100%;
 
     background-image: url(img/bg-image.png);
-    background-size: 110%;
 }
 
 .container {
@@ -519,4 +520,105 @@ footer h2 {
     footer h2 {
         font-size: 1.8rem;
     }
+}
+
+/* -------------------------- */
+/* DESKTOP SCREEN BREAKPOINT */
+/* ------------------------ */
+
+@media screen and (min-width: 1280px) {
+    body {
+        padding: 5rem;
+    }
+
+    .orange-rectangle {
+        top: -5rem;
+    }
+
+    /* Change flex direction from column to row */
+    /* Adjust padding */
+    header {
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 1rem 5rem;
+    }
+
+    /* Decrease width of logo and add transition */
+    #logo {
+        width: 8rem;
+        transition: transform 0.2s;
+        cursor: pointer;
+    }
+
+    /* Animate logo */
+    #logo:hover {
+        transform: scaleX(-1);
+    }
+
+    /* Remove hamburger menu icon */
+    #open-menu-icon {
+        display: none;
+    }
+
+    /* Make nav menu visible */
+    .nav-menu {
+        display: flex;
+        gap: 8rem;
+    }
+
+    /* Remove bullet points and margin from li */
+    .nav-menu li {
+        list-style: none;
+        margin: 0;
+    }
+
+    /* Adjust font size and add transition */
+    .nav-link {
+        font-size: 2.2rem;
+        transition: color 0.2s;
+    }
+
+    /* Animate color */
+    .nav-link:hover {
+        color:#FF6C00;
+    }
+
+    /* ------------ */
+    /* MAIN STYLES */
+    /* ---------- */
+
+    #cat-poster {
+        right: -13rem;
+        top: -10rem;
+    }
+    
+    .main-text-container {
+        margin-top: 8rem;
+
+        width: calc(100vw - 34rem);
+    }
+
+    .text-container {
+        min-height: 30rem;
+    }
+
+    .ba-img-div {
+        width: auto;
+    }
+
+    .ba-image {
+        width: 50%;
+    }
+
+    /* background: linear-gradient(to right, #282D4F, #A0204C); */
+
+    .free-guide-btn {
+        background: linear-gradient(to right, #282D4F, transparent) #A0204C;
+        transition: background-color 0.3s;
+      }
+      .free-guide-btn:hover, .free-guide-btn:focus {
+        background-color: #5ff4b3;
+      }
 }
