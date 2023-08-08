@@ -594,18 +594,19 @@ footer h2 {
     }
 
     #cat-poster {
-        right: -20rem;
+        right: -15rem;
         top: -10rem;
     }
     
     .main-text-container {
-        margin-top: 8rem;
+        margin-top: 12rem;
 
         width: calc(100vw - 34rem);
     }
 
     .text-container {
         min-height: 30rem;
+        width: calc(100% - 20rem);
     }
 
     .ba-img-div {
