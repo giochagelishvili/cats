@@ -589,8 +589,12 @@ footer h2 {
     /* MAIN STYLES */
     /* ---------- */
 
+    .main-headline {
+        font-size: 3.2rem;
+    }
+
     #cat-poster {
-        right: -13rem;
+        right: -20rem;
         top: -10rem;
     }
     
